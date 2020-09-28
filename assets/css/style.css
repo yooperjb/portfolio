@@ -6,6 +6,7 @@
 }
 :root {
 --header-bg-color : lightgray;
+--project-color : #a19179;
 }
 body {
     font-family: Arial, Helvetica, sans-serif;
@@ -44,6 +45,33 @@ header nav ul li a:hover {
 }
 /* End Header Styles */
 
+/* Hero Styles */
+.hero {
+    height: 500px;
+    background-image: url("../images/FMTW0Z0JJ8U54R4.jpg");
+    background-size: cover;
+    background-position: bottom  ;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    box-shadow: black;
+}
+.subtitle {
+    border: 2px solid var(--project-color);
+    height: 200px;
+    width: 150px;
+    background-image: url("../images/IMG_20200523_122010726_BURST001.jpg");
+    background-size: cover;
+    padding: 50px;
+    margin: 50px;
+}
+.subtitle h2 {
+    margin: 20px;
+    background: var(--header-bg-color);
+    padding: 10px;
+}
+/* End Hero Styles */
+
 /* Section Styles */
 section {
     width: 90%;
@@ -60,7 +88,7 @@ section h2 {
 .column-head {
     border-right: 3px solid brown;
     margin: 0px 20px 0 20px;
-    flex: 1 20%;
+    flex: 1 15%;
 }
 .column-content {
     flex: 2 80%;
@@ -72,57 +100,68 @@ section p {
 }
 /* End Section Styles
 
-/* Hero Styles */
-.hero {
-    height: 500px;
-    background-image: url("../images/FMTW0Z0JJ8U54R4.jpg");
-    background-size: cover;
-    background-position: bottom  ;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-}
-.subtitle h2 {
-    margin: 20px;
-    background: var(--header-bg-color);
-    padding: 10px;
-}
-/* End Hero Styles */
+
 
 /* Work Styles */
 .work-grid-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3,1fr);
+    width: 100%;
     height: 500px;
     grid-gap: 10px;
 }
-.work-img {
+.project {
+    border: 4px solid var(--project-color);
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-end;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
     background-position: top;
     background-size: cover;
-    border: 4px solid brown;
 }
-.work-img div {
-    background: brown;
-    padding: 5px 10px;
-    margin-bottom: 15px;
-}
-.work-img h3 {
+.project-title {
+    background: var(--project-color);
     padding: 5px;
+    margin: 10px 0;
+    border-radius: 0 15px 15px 0;
+}
+.project-title h3 {
+    color: black;
     font-size: 20px;
 }
-.work-img h4 {
-    padding: 5px;
+.project-title h4 {
+    color: black;
     font-size: 15px;
+    font-weight: lighter;
+}
+.project a {
+    text-decoration: none;
 }
 
+.project1 {
+    background-image: url("../images/run_buddy.png");
+    grid-column: 1/3;
+    grid-row: 1/3;
+}
+.project2 {
+    background-image: url("../images/Humboldt_lafco.png");
+}
+.project3 {
+    background-image: url("../images/delnorte_lafco.png");
+}
+.project4 {
+    background-image: url("../images/trinity_lafco.png");
+}
+.project5 {
+    background-image: url("../images/planwest.png");
+}
+.project6 {
+    background-image: url("../images/Humboldt_lafco.png");
+}
+/*
 .work1 {
     background-image: url("../images/run_buddy.png");
-    #background-position: top;
-    #background-size: cover;
     grid-column: 1/3;
     grid-row: 1/3;
 }
@@ -138,6 +177,7 @@ section p {
 .work5 {
     background-image: url("../images/delnorte_lafco.png");
 }
+*/
 /* End Work Styles */
 
 /* Contact Styles */

@@ -6,6 +6,7 @@
 }
 :root {
 --header-bg-color : lightgray;
+--accent-color: #024E76;
 --project-color : #a19179;
 }
 body {
@@ -37,12 +38,9 @@ header nav ul li a {
     margin: 0 10px;
     text-decoration: none;
     font-size: 24px;
-    border-bottom: 2px solid brown;
-    color: black;
+    color: var(--accent-color);
 }
-header nav ul li a:hover {
-    border-top: 2px solid brown;
-}
+
 /* End Header Styles */
 
 /* Hero Styles */
@@ -86,7 +84,7 @@ section h2 {
     padding: 5px 10px 0 0;
 }
 .column-head {
-    border-right: 3px solid brown;
+    border-right: 3px solid var(--accent-color);
     margin: 0px 20px 0 20px;
     flex: 1 15%;
 }
@@ -172,7 +170,7 @@ section p {
 }
 .contact ul li a{
     text-decoration: none;
-    color: black;
+    color: var(--accent-color);
     padding: 10px;
     margin: 10px 5px;
 }
@@ -247,11 +245,10 @@ section p {
     }
     .column-head {
         border-right: 0px;
-        border-bottom: 1px solid brown;
+        border-bottom: 1px solid var(--accent-color);
         margin: 5px 0px 10px 0px;
     }
     .contact ul {
-        
         justify-content: center;
         flex-wrap: wrap;
     }

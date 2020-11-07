@@ -1,3 +1,5 @@
+
+/* Over/under line hover */
 .text-hover {
     display: inline;
     padding-top: 10px;
@@ -91,3 +93,4 @@
 .text-hover-overline-goes-left-underline-goes-right:before {
     bottom: 0%;
     left: 0%; }
+/* End over/underline hover */
